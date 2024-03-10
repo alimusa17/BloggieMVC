@@ -56,7 +56,7 @@ namespace Bloggie.Web.Controllers
             foreach (var selectedTagId in addBlogPostRequest.SelectedTags)
             {
                 var selectedTagIdAsGuid = Guid.Parse(selectedTagId);
-                var existingTag = await tagRepository.DeleteAsync(selectedTagIdAsGuid);
+                var existingTag = await tagRepository.GetAsync(selectedTagIdAsGuid);
 
                 if (existingTag != null)
                 {

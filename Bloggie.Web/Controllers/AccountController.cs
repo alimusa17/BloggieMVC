@@ -74,7 +74,7 @@ namespace Bloggie.Web.Controllers
             {
                 if (!string.IsNullOrWhiteSpace(loginViewModel.ReturnUrl))
                 {
-                    return RedirectToPage(loginViewModel.ReturnUrl);
+                    return Redirect(loginViewModel.ReturnUrl);
                 }
 
                 return RedirectToAction("Index", "Home");
