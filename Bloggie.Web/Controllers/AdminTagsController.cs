@@ -18,7 +18,6 @@ namespace Bloggie.Web.Controllers
             this.tagRepository = tagRepository;
         }
 
-
         [HttpGet]
         public IActionResult Add()
         {
@@ -29,6 +28,13 @@ namespace Bloggie.Web.Controllers
         [ActionName("Add")]
         public async Task<IActionResult> Add(AddTagRequest addTagRequest)
         {
+            ValidateAddTagRequest(addTagRequest);
+
+            if (ModelState.IsValid == false)
+            {
+                return View();
+            }
+
             // Mapping AddTagRequest to Tag domain model
             var tag = new Tag
             {
@@ -41,7 +47,6 @@ namespace Bloggie.Web.Controllers
             return RedirectToAction("List");
         }
 
-
         [HttpGet]
         [ActionName("List")]
         public async Task<IActionResult> List()
@@ -51,7 +56,6 @@ namespace Bloggie.Web.Controllers
             
             return View(tags);
         }
-
 
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
@@ -93,7 +97,6 @@ namespace Bloggie.Web.Controllers
             {
                 // Show error notification
             }
-
             
             return RedirectToAction("Edit", new { id = editTagRequest.Id });
         }
@@ -111,6 +114,18 @@ namespace Bloggie.Web.Controllers
 
             // Show an error notification
             return RedirectToAction("Edit", new { id = editTagRequest.Id });
+        }
+
+
+        private void ValidateAddTagRequest(AddTagRequest request)
+        {
+            if (request.Name is not null && request.DisplayName is not null)
+            {
+                if (request.Name == request.DisplayName)
+                {
+                    ModelState.AddModelError("DisplayName", "Name cannot be same as DisplayName");
+                }
+            }
         }
     }
 }
