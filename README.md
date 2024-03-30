@@ -48,3 +48,15 @@ Bloggie is an open-source project, and contributions are highly encouraged. To c
 
 Bloggie is licensed under the MIT License.
 
+## Screenshots 
+
+![Screenshot (583)](https://github.com/alimusa17/BloggieMVC/assets/106487730/5a70b2ed-596f-4fe8-b210-efceeb1b7966)
+![Screenshot (584)](https://github.com/alimusa17/BloggieMVC/assets/106487730/3c9b1c08-fb4b-4b6c-aa63-999d1e1b8479)
+![Screenshot (585)](https://github.com/alimusa17/BloggieMVC/assets/106487730/6587e254-5722-4881-b757-80de56ecb1c6)
+![Screenshot (586)](https://github.com/alimusa17/BloggieMVC/assets/106487730/f24dc0b4-f66b-482a-9e80-94bb64c1dd02)
+![Screenshot (587)](https://github.com/alimusa17/BloggieMVC/assets/106487730/892a3073-3baf-46ee-a5ee-d892ba623b30)
+![Screenshot (589)](https://github.com/alimusa17/BloggieMVC/assets/106487730/ddd58de0-b730-45b6-a242-6d4baee76070)
+![Screenshot (591)](https://github.com/alimusa17/BloggieMVC/assets/106487730/8de2e269-4e9d-49cf-a929-4e5175109969)
+![Screenshot (592)](https://github.com/alimusa17/BloggieMVC/assets/106487730/59ef4146-fa53-481b-895f-f1b365283612)
+![Screenshot (594)](https://github.com/alimusa17/BloggieMVC/assets/106487730/ea0883c0-3dd0-4954-94ec-cd6cf91c4f3c)
+![Screenshot (595)](https://github.com/alimusa17/BloggieMVC/assets/106487730/1018172a-94c8-4c81-862c-8ffe83ac31f8)
